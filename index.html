@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua</title>
     <link rel="stylesheet" href="latex.css">
-    <link rel="shortcut icon" href="/logo.png" />
+    <link rel="shortcut icon" href="../logo.png" />
     <style>
         a {
             color: blue;
@@ -43,7 +43,7 @@
             color: #fff;
         }
         body.dark-mode a {
-            color: #09f;
+            color: deeppink ;
         }
 
         /* Toggle button styles */
@@ -70,20 +70,21 @@
             text-align: justify;
             hyphens: auto;
             line-height: 1.4;
+            max-width: 3000px; /* Adjust the max-width to your desired value */
+            margin: 0 auto; /* Center the article horizontally */
+            padding: 0 auto; /* Add padding to create space around the content */
+            
         }
         body {
-            font-size: 17px;
+            font-size: 16px;
         }
-
-
     </style>
-
 </head>
 
 <body>
     <header>
         <div class="header-image">
-            <img src="/1.png" alt="Image">
+            <img src="../1.png" alt="Image">
         </div>
         <div class="header-content">
             <h1>Joshua J. George</h1>
@@ -100,7 +101,7 @@
             in the field of Classical Fourier Analysis $\subset$ Harmonic Analysis. 
             
             I am currently a research intern at the <a href="https://www.mpi-magdeburg.mpg.de/2316/en">Max Planck Insitute for Dynamics of Complex Technical Systems</a>
-            in the Computational Methods in Systems and Control Theory Group working under Mr. <a href="https://www.mpi-magdeburg.mpg.de/person/116105/2316">Yongho Kim</a>
+            in the Computational Methods in Systems and Control Theory Group working under <a href="https://www.mpi-magdeburg.mpg.de/person/116105/2316">Mr. Yongho Kim</a>
             and Prof. <a href="https://www.janheiland.de/">Jan Heiland</a>. I am also a research assistant working under
             Prof. <a href="https://sites.ualberta.ca/~yaozhong/">Yaozhong Hu</a> at the <a href="https://www.ualberta.ca">University of Alberta</a>.
         </article>
@@ -158,6 +159,21 @@
 
 
 
+
+
+
+
+    <script>
+    
+        function setDarkModePreference(enabled) {
+            localStorage.setItem('darkMode', enabled);
+        }
+
+        function getDarkModePreference() {
+            return localStorage.getItem('darkMode') === 'true';
+        }
+    </script>
+
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
         MathJax = {
@@ -167,12 +183,22 @@
         }
         function toggleDarkMode() {
             const body = document.body;
-            body.classList.toggle("dark-mode");
+            const isDarkMode = body.classList.toggle('dark-mode');
+            setDarkModePreference(isDarkMode);
         }
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const isDarkMode = getDarkModePreference();
+            const body = document.body;
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+        });
     </script>
 
     <div class="toggle-button" onclick="toggleDarkMode()">
-        <img src="/3.PNG" alt="Toggle Dark Mode">
+        <img src="../3.png" alt="Toggle Dark Mode">
     </div>
 </body>
 </html>
