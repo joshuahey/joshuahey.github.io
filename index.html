@@ -78,6 +78,47 @@
         body {
             font-size: 16px;
         }
+        .projectmpi {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.image {
+    flex: 1;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
     </style>
 </head>
 
@@ -141,8 +182,21 @@
     <main>
         <article>
             <h2 id="Research Projects">Research Projects <a href="#section1">&#8593;</a></h2>
+            <div class="projectmpi">
+                <div class="container">
+                    <div class="image">
+                        <img src="../4.PNG">
+                        <img src="../5.PNG">
+                    </div>
+                    <div class="text">
+                        <div class="title">
+                            <h3>Summer '23</h3>
+                        </div>
+                        <p>My current research at the MPI-magdeburg consists of extracting feature weights and maps from various models such as Convolutional Neural Networks, Convolutional Autoencoders (CAEs) and Individual CAEs (iCAEs) <sup><a href="#fn2" id="ref2">2</a></sup> for the Navier-Stokes equations within a single and double cylinder and analyzing them.</p>
+                    </div>
+                </div>
+            </div>
             
-
 
         </article>
     </main>
@@ -231,7 +285,7 @@
     </script>
 
     <div class="toggle-button" onclick="toggleDarkMode()">
-        <img src="../3.PNG" alt="Toggle Dark Mode">
+        <img src="../3.png" alt="Toggle Dark Mode">
     </div>
 </body>
 </html>
