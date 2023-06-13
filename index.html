@@ -107,6 +107,7 @@
         }
 
         .image img {
+            margin-top: 0px;
             width: 100%;
             display: block;
             margin-bottom: 10px;
@@ -162,6 +163,16 @@
         font-size: 18px;
         font-weight: bold;
     }
+
+    .title h5{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .header {
+      text-align: right;
+    }
+    
     </style>
 </head>
 
@@ -197,7 +208,7 @@
                 in the Computational Methods in Systems and Control Theory Group. I am working under Mr. <a href="https://www.mpi-magdeburg.mpg.de/person/116105/2316">Yongho Kim</a>
                 and Prof. <a href="https://www.janheiland.de/">Jan Heiland</a>. My research focuses on utilizing Convolutional Autoencoders and 
                 Deep Visualization Techniques to analyze the feature maps and weights 
-                of snapshots from spatially discretized incompressible
+                of snapshots from the spatially discretized incompressible
                 <a href ="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations">Navier-Stokes</a>  equations within a cylinder.
             </p>
             
@@ -223,14 +234,12 @@
       
     <main>
         <article>
-            <h2 id="Research Projects">Research Projects <a href="#section1">&#8593;</a></h2>
+            <h2 id="Research Projects">Research Projects [<a href="#section1">&#8593;</a>]</h2>
             <div class="projectmpi">
                     <div class="image">
                         <img src="../4.PNG">
                         <img src="../6.PNG">
                         <img src="../5.PNG">
-                        
-                        
                     </div>
                     <div class="text1">
                         <div class="title">
@@ -256,17 +265,18 @@
                         </div>
                     </div>
             </div>
-                    <h4>Winter '23</h4>
+        <div>
+         <h4>Winter '23</h4>
                 <p>
                     During the Winter Semester of my third year, I did my undergraduate thesis under Prof. Bin Han. 
-                    The title of my thesis is <span class= "highlight">Linear Independence and Stability of Functions</span>. I started off by studying 
-                    prelimaninary material like Distribution Theory and Functional Analysis and then we 
-                    proves some results like Linear independence of compactly supported distributions and relating the Kernel of
+                    The title of my thesis was <span class= "highlight">Linear Independence and Stability of Functions</span>. I started off by studying 
+                    preliminary material like Distribution Theory and Functional Analysis and then, we 
+                    proved some results like Linear independence of compactly supported distributions and relating the Kernel of
                     the space of semi-discrete convolutions of a distribution to the Fourier transform of the distribution. 
                 </p>
 
                 <p>
-                    Writing this thesis has been enlightening, and I've gained a plethora of valuable knowledge. 
+                    My thesis writing has been enlightening, providing me with valuable knowledge and skills. 
                     Despite the significant time commitment, I efficiently developed my paper writing skills through guidance and feedback from my supervisor.
                 </p>
                 <p>
@@ -283,6 +293,28 @@
     
                 </p>
         </div>
+
+        <div class="header">
+            <h4>Summer '22</h4>
+            <p>
+                Haven taken the <i>Honors Ordinary Differential Equations</i> (0DEs) course in the Winter '22 semester, taught by 
+                Prof. <a href = "https://sites.ualberta.ca/~niksirat/">Mohammad Ali Niksirat</a>,
+                we were given the opportunity to work on a final project. I decided to work on <span class= "highlight">Proving the Existence of Periodic
+                Solutions for Second - Order Non - Autonomous Differential Equations</span> i.e, ODEs of the type; 
+                $\ddot{x} =f\left(t,\; x(t),\; \dot{x} (t)\right)$ with periodic boundary conditions; $x(0)=x(\lambda),$ $\dot{x}(0)=\dot{x}(\lambda)$
+                where $f$ is an arbitrary function, and $\lambda$ is a real number.
+                
+                </p>
+                <p>
+                
+                Following this semester, I decided to work under Prof.
+                Niksirat on the same project over the summer. We approached it using <a href = "https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping">Degree Theory</a>. 
+                I went through the first two chapters of Louis Nirenberg’s<sup><a href="#fn3" id="ref3">3</a></sup> <i>Topics in Non-Linear Functional Analysis</i>.
+            </p>
+          </div>
+
+
+
             
 
         </article>
@@ -326,9 +358,9 @@
     
         <p id ="fn1">
             Kim, Yongho, and Jan Heiland. 
-            <a href="https://arxiv.org/pdf/2302.01278.pdf">"Convolutional Autoencoders, Clustering, and POD for Low-dimensional Parametrization of Navier-Stokes Equations."</a>
+            <a href="https://arxiv.org/pdf/2302.01278.pdf">"Convolutional Autoencoders, Clustering, and POD for Low-dimensional Parametrization of Navier-Stokes Equations"</a>.
             Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg, Germany, and Department of Mathematics, Otto von Guericke University Magdeburg, Magdeburg, Germany.
-            <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a>
+            <a href="#ref1" >↩</a>
         </p>
         <p id="fn2">
             Claire Launay, Agnès Desolneux, Bruno Galerne.
@@ -336,9 +368,16 @@
           <a
             href="https://hal.science/hal-02611259/file/DPP_for_image_processing.pdf">"Determinantal Point Processes for Image Processing"</a>.
           SIAM Journal on Imaging Sciences, 2020, 14 (1), pp.304-348. ff10.1137/20M1327306ff. ffhal-02611259v2
-          <a href="#ref2" title="Jump back to footnote 1 in the text.">↩</a>
+          <a href="#ref2" >↩</a>
 
         </p>
+        <p id = "fn3">
+            Nirenberg, Louis. 
+            <a href = "https://bookstore.ams.org/cln-6">"Topics in Nonlinear Functional Analysis"</a>. 
+            New York University - Courant Institute of Mathematical Sciences, New York, NY.
+            <a href="#ref3" >↩</a>
+        </p>
+    </div>
 
 
 
@@ -361,20 +400,37 @@
                 inlineMath: [["$", "$"]]
             }
         }
-        function toggleDarkMode() {
-            const body = document.body;
-            const isDarkMode = body.classList.toggle('dark-mode');
-            setDarkModePreference(isDarkMode);
+        function setDarkModePreference(isDarkMode) {
+        // Store the dark mode preference in local storage
+        localStorage.setItem('darkModePreference', isDarkMode);
+    }
+
+    function getDarkModePreference() {
+        // Retrieve the dark mode preference from local storage
+        return localStorage.getItem('darkModePreference') === 'true';
+    }
+
+    function setDefaultDarkMode() {
+        const body = document.body;
+        const isDarkMode = body.classList.add('dark-mode');
+        setDarkModePreference(isDarkMode);
+    }
+
+    function toggleDarkMode() {
+        const body = document.body;
+        const isDarkMode = body.classList.toggle('dark-mode');
+        setDarkModePreference(isDarkMode);
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = getDarkModePreference();
+        const body = document.body;
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            setDefaultDarkMode();
         }
-    </script>
-    <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            const isDarkMode = getDarkModePreference();
-            const body = document.body;
-            if (isDarkMode) {
-                body.classList.add('dark-mode');
-            }
-        });
+    });
     </script>
 
     <div class="toggle-button" onclick="toggleDarkMode()">
