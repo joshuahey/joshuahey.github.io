@@ -20,11 +20,7 @@
             display: flex;
             align-items: center;
         }
-        /* Remove the margin-right property */
-        /* .header-image {
-            margin-right: 1rem;
-        } */
-        /* Add the following CSS for the image */
+
         .header-image img {
             width: 225px;
             height: auto;
@@ -45,6 +41,24 @@
         body.dark-mode a {
             color: aqua;
         }
+        
+        .highlight {
+        background-color:  rgb(89, 89, 255);
+        padding: 2px 4px;
+        display: inline;
+        border-radius: 3px;
+        color: white;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode .highlight {
+        background-color: rgb(93, 252, 252);
+        color: black;
+        padding: 2px 4px;
+        display: inline;
+        border-radius: 3px;
+        }
+
 
         /* Toggle button styles */
         .toggle-button {
@@ -114,7 +128,7 @@
         
         .projectnserc {
         display: flex;
-        align-items: center;
+        align-items: center; 
     }
 
    
@@ -242,9 +256,28 @@
                     <h4>Winter '23</h4>
                 <p>
                     During the Winter Semester of my third year, I did my undergraduate thesis under Prof. Bin Han. 
-                    The title of my thesis is Linear Independence and Stability of Functions and the full thesis, including
-                    the poster and presentation, can be accessed here - .
+                    The title of my thesis is <span class= "highlight">Linear Independence and Stability of Functions</span>. I started off by studying 
+                    prelimaninary material like Distribution Theory and Functional Analysis and then we 
+                    proves some results like Linear independence of compactly supported distributions and relating the Kernel of
+                    the space of semi-discrete convolutions of a distribution to the Fourier transform of the distribution. 
+                </p>
 
+                <p>
+                    Writing this thesis has been enlightening, and I've gained a plethora of valuable knowledge. 
+                    Despite the significant time commitment, I efficiently developed my paper writing skills through guidance and feedback from my supervisor.
+                </p>
+                <p>
+                    We also had to do a write-up on a famous classical result in our field so I chose to do it on the
+                     <a href="https://en.wikipedia.org/wiki/Poisson_summation_formula">Poisson Summation Formula</a>. 
+                     This has improved my ability to efficiently summarize complex concepts and communicate them effectively to others.
+                </p>
+                
+                <p>
+                    The full thesis, including
+                    the poster, presentation and the clasical result can be accessed here [<a href="../Pdfs/MATH_499_Thesis.pdf">Thesis</a>], 
+                    [<a href="../Pdfs/MATH_499_Final_Poster.pdf">Poster</a>], [<a href="../Pdfs/MATH_499_Final_Presentation.pdf">Presentation</a>],
+                    [<a href="../Pdfs/MATH_499_Classical_Result.pdf">Write-up</a>].
+    
                 </p>
         </div>
             
@@ -288,7 +321,6 @@
     <hr>
     <div class="footnotes">
     
-        
         <p id ="fn1">
             Kim, Yongho, and Jan Heiland. 
             <a href="https://arxiv.org/pdf/2302.01278.pdf">"Convolutional Autoencoders, Clustering, and POD for Low-dimensional Parametrization of Navier-Stokes Equations."</a>
@@ -304,8 +336,6 @@
           <a href="#ref2" title="Jump back to footnote 1 in the text.">↩</a>
 
         </p>
-
-
 
 
 
