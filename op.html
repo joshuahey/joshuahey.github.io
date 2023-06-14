@@ -427,11 +427,11 @@ function getDarkModePreference() {
     return localStorage.getItem('darkModePreference') === 'true';
 }
 
-function setDefaultDarkMode() {
-    const body = document.body;
-    const isDarkMode = body.classList.add('dark-mode');
-    setDarkModePreference(isDarkMode);
-}
+// function setDefaultDarkMode() {
+//     const body = document.body;
+//     const isDarkMode = body.classList.add('dark-mode');
+//     setDarkModePreference(isDarkMode);
+// }
 
 function toggleDarkMode() {
     const body = document.body;
