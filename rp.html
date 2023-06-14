@@ -1,0 +1,604 @@
+<!-- page1.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua</title>
+        <link rel="stylesheet" href="latex.css">
+        <link rel="shortcut icon" href="../joshuahey.github.io/logo.png" />
+        <style>
+            
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+            a:visited {
+                color: blue;
+            }
+            
+            header {
+                display: flex;
+                align-items: center;
+            }
+    
+            .header-image img {
+                width: 225px;
+                height: auto;
+                border-radius: 70%;
+                margin-bottom: 2rem;
+            }
+            .header-content {
+                margin-left: 6rem;
+                margin-top: 0rem; /* Add margin-top property to create space */
+                justify-content: center;
+            }
+            
+            /* Dark mode styles */
+            body.dark-mode {
+                background-color: #222;
+                color: #fff;
+            }
+            body.dark-mode a {
+                color: aqua;
+            }
+            
+            .highlight {
+            background-color:  rgb(89, 89, 255);
+            padding: 2px 4px;
+            display: inline;
+            border-radius: 3px;
+            color: white;
+            }
+    
+            /* Dark mode styles */
+            body.dark-mode .highlight {
+            background-color: rgb(93, 252, 252);
+            color: black;
+            padding: 2px 4px;
+            display: inline;
+            border-radius: 3px;
+            }
+    
+    
+            /* Toggle button styles */
+            .toggle-button {
+                position: fixed;
+                right: 1rem;
+                bottom: 1rem;
+                width: 45px;
+                height: 45px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                z-index: 9999;
+            }
+            .toggle-button img {
+                width: 30px;
+                height: 30px;
+            }
+            article {
+                text-align: justify;
+                hyphens: auto;
+                line-height: 1.4;
+                max-width: 3000px; /* Adjust the max-width to your desired value */
+                margin: 0 auto; /* Center the article horizontally */
+                padding: 0 auto; /* Add padding to create space around the content */
+                
+            }
+            body {
+                font-size: 16.5px;
+            }
+            .projectmpi {
+                display: flex;
+                align-items: center;
+            }
+    
+            .image {
+                flex: 1;
+            }
+    
+            .text1 {
+                flex: 1;
+                padding: 15px;
+            }
+    
+            .image img {
+                margin-top: 0px;
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+            }
+    
+            .title h3 {
+                margin-top: -25px;
+    
+                font-size: 18px;
+                font-weight: bold;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 0;
+            }
+    
+            
+            .projectnserc {
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start;
+        }
+    
+       
+        .text2 {
+            flex: 1;
+            margin: 0;
+            padding: 15px;
+            float: left;
+            margin-left: -14px;
+           
+        }
+        .image {
+            flex: 1;
+        }
+    
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px;
+        }
+    
+        .grid img {
+            width: 90%;
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        .title h4{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+        .title h5{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+        .header {
+          text-align: right;
+        }
+    
+        .container {
+      margin: 10px; /* Adjust the margin as needed */
+    }
+    
+    .image-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    }
+    
+    .image-container img {
+      width: 100%; /* Set images to occupy 100% width of their container */
+      max-width: 290px; /* Set a maximum width for the images */
+      height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    }
+    
+    .image-container img:first-child {
+      margin-left: -5px;
+      margin-top: 60px;
+      max-width: 275px;
+      height: 65px; /* Adjust the max-width as needed for the first image */
+    }
+    
+    .image-container img:last-child {
+      margin-top: 1px;
+      max-width: 255px;
+      height: 135px; /* Adjust the max-width as needed for the last image */
+      margin-left: 40px;
+       /* Remove margin on the last image to avoid extra gap */
+    }
+    
+    /* Media queries for mobile devices */
+    @media only screen and (max-width: 767px) {
+      .container {
+        margin: 5px; /* Adjust the margin for smaller screens */
+      }
+      
+      .image-container img:first-child {
+        margin-top: 50px; /* Adjust the margin-top for smaller screens */
+        max-width: 200px; /* Adjust the max-width for smaller screens */
+        height: 50px; /* Adjust the height for smaller screens */
+      }
+    
+      .image-container img:last-child {
+        max-width: 220px; /* Adjust the max-width for smaller screens */
+        margin-left: 10px; 
+        /* Adjust the margin-left for smaller screens */
+      }
+    }.con {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+    }
+    
+    .smaller-image {
+      width: 500px;
+      height: auto;
+      max-width: 100%; /* Set the maximum width to 100% of the container */
+      max-height: auto; /* Allow the height to adjust automatically */
+    }
+    
+    .ii {
+      text-align: center; /* Center the caption text */
+    }
+    
+    .caption {
+      margin-top: 10px; /* Adjust the margin as needed */
+      font-size: 11px;
+      white-space: pre-line; /* Preserve line breaks */
+    }
+    .cons {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+    }
+    
+    .smaller-imag {
+      width: 350px;
+      height: auto;
+      max-width: 100%; /* Set the maximum width to 100% of the container */
+      max-height: auto; /* Allow the height to adjust automatically */
+    }
+    
+    .iis {
+      text-align: center; /* Center the caption text */
+    }
+    
+    .caption {
+      margin-top: 10px; /* Adjust the margin as needed */
+      font-size: 11px;
+      white-space: pre-line; /* Preserve line breaks */
+    }
+    
+    
+    .custom-list {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    
+    .custom-list li:before {
+      
+      
+      font-size: 16px; /* Customize the size */
+      margin-right: 5px; /* Customize the spacing between the bullet and text */
+    }
+    
+    
+    
+        </style>
+    
+      <meta property="og:title" content="Joshua">
+      <meta property="og:description" content="Honors Math @Ualberta">
+      <meta property="og:image" content="../joshuahey.github.io/1.png">
+    
+    
+    </head>
+</head>
+<body>
+
+  
+  <main>
+    <article>
+        <!-- <div class="container">
+            <div class="image-container">
+              <img src="../joshuahey.github.io/12.png" alt="Image 1">
+              <img src="../joshuahey.github.io/13.png" alt="Image 2">
+            </div>
+          </div> -->
+          <div style="text-align: center;">
+            <a href="index.html">Home</a> / 
+            <!-- <a href="rp.html">Research Projects</a> /  -->
+            <a href="op.html">Other Projects</a> / 
+            <a href="conf.html">Conferences</a> / 
+            <a href="org.html">Organisations</a> / 
+            <a href="course.html">Coursework</a>
+            </div>
+          
+        <!-- <h2 id="Research Projects">Research Projects [<a href="#section1">&#8593;</a>]</h2> -->
+        <h2>Research Projects</h2>
+        
+        <div class="projectmpi">
+                <div class="image">
+                    <img src="../joshuahey.github.io/4.PNG">
+                    <img src="../joshuahey.github.io/6.PNG">
+                    <img src="../joshuahey.github.io/5.PNG">
+                </div>
+                <div class="text1">
+                    <div class="title">
+                        
+                        <h3>Summer '23</h3>
+                    </div>
+                    
+                    <p>My current research at the MPI - Magdeburg consists of extracting feature weights 
+                        and maps from various models 
+                        <!-- <label for="sn-symbol"
+                        class="sidenote-toggle">⊕</label><input type="checkbox" id="sn-symbol" class="sidenote-toggle" /><span
+                        class="sidenote right"><img src = "../joshuahey.github.io/13.png" style="width: 1000px; height: auto;"></span> -->
+                         such as Convolutional Neural Networks, Convolutional Autoencoders (CAEs)
+                         and Individual CAEs (iCAEs)<sup><a href="#fn1" id="ref1">1</a></sup> for the Discretized Incompressible Navier - Stokes Equations within a single and double cylinder and analyzing them.</p>
+                </div>
+        </div>
+        <div class="projectnserc">
+                <div class="text2">
+                    <p>For my research at the University of Alberta, 
+                        <!-- <label for="sn-plu" class="sidenote-toggle">⊕</label><input type="checkbox"
+                        id="sn-plu" class="sidenote-toggle" />
+                        <span class="sidenote left"><img src = "../joshuahey.github.io/12.png" style="width: 1000px; height: auto;">
+                        </span> -->
+                         Prof. Yaozhong Hu and I have been been thoroughly studying and analysing 
+                        Clair et al.'s work<sup><a href="#fn2" id="ref2">2</a></sup> <i>Determinantal Point Processes</i> (DPP) 
+                        <!-- <label for="sn-p" class="sidenote-toggle">⊕</label><input type="checkbox"
+                            id="sn-p" class="sidenote-toggle" />
+                            <span class="sidenote left">A random set $X \subset \mathcal{Y}$ is a DPP if
+                                $\mathbb{P}(A \subset X)=\operatorname{det}\left(K_A\right), \; \forall A \subset \mathcal{Y} = \{1, 2 \ldots N\}$ where $K_A$
+                            is a similarity matrix.                               </span> -->
+                            <i>for Image Processing.</i>
+                        We aim to gain a better understanding of the paper and extract valuable insights from its content and findings.  
+                </div>
+                <div class="image">
+                    <div class="grid">
+                        <img src="../joshuahey.github.io/7.PNG">
+                        <img src="../joshuahey.github.io/8.PNG">
+                        <img src="../joshuahey.github.io/9.PNG">
+                        <img src="../joshuahey.github.io/10.PNG">
+                        
+                    </div>
+                </div>
+        </div>
+    <div>
+     <h4>Winter '23</h4>
+     
+      
+            <p>
+                During the Winter Semester of my third year, I did my undergraduate thesis under Prof. Bin Han. 
+                The title of my thesis was <a href="#" onclick="event.preventDefault();">Linear Independence and Stability of Functions</a>.
+                <!-- <label for="sn-s" class="sidenote-toggle">⊕</label><input type="checkbox"
+                id="sn-s" class="sidenote-toggle" />
+                <span class="sidenote right">For $v=\left\{v_k\right\}_{k \in \mathbb{Z}^d} \in \ell\left(\mathbb{Z}^d\right), \; f \in \mathscr{E}^{\prime}\left(\mathbb{R}^d\right)$, 
+                    we say $\{f(\cdot-k)\}_{k \in \mathbb{Z}^d}$ is linearly independent if $\sum_{k \in \mathbb{Z}^d} v_k f(\cdot-$ $k)=0 \Longrightarrow v_k=0 \; \forall k \; \in \mathbb{Z}^d$. 
+                    
+                </span> -->
+                 I started off by studying 
+                preliminary material like Distribution Theory and Functional Analysis by going through Loukas Grafakos<sup><a href="#fn3" id="ref3">3</a></sup> <i>Classical Fourier Analysis</i>. Then, we 
+                proved some results like Linear independence of compactly supported distributions and relating the Kernel of
+                the space of semi-discrete convolutions of a distribution to the Fourier transform of the distribution. 
+
+            </p>
+
+            <p>
+                My thesis writing 
+                <!-- <label for="sn-plus" class="sidenote-toggle">⊕</label><input type="checkbox"
+                id="sn-plus" class="sidenote-toggle" />
+                <span class="sidenote left"><img src = "../joshuahey.github.io/14.PNG" style="width: 1000px; height: auto;"></span> -->
+                 has been enlightening, providing me with valuable knowledge and skills. 
+                Despite the significant time commitment, I efficiently developed my paper writing skills through guidance and feedback from my supervisor.
+            </p>
+            <p>
+                We also had to do a write-up on a famous classical result in our field so I chose to do it on the
+                 <a href="https://en.wikipedia.org/wiki/Poisson_summation_formula">Poisson Summation Formula</a>. 
+                 This improved my ability to efficiently summarize complex concepts and communicate them effectively to others.
+            </p>
+            <p></p>
+            <p></p>
+            <div class="con">
+                <div class="ii">
+                  <img src="../joshuahey.github.io/14.PNG" alt="Image" class="smaller-image">
+                  <div class="caption">For $v=\left\{v_k\right\}_{k \in \mathbb{Z}^d} \in \ell\left(\mathbb{Z}^d\right), \; f \in \mathscr{E}^{\prime}\left(\mathbb{R}^d\right)$, we say $\{f(\cdot-k)\}_{k \in \mathbb{Z}^d}$ 
+                    is linearly independent if $\sum_{k \in \mathbb{Z}^d} v_k f(\cdot-$ $k)=0 \Longrightarrow v_k=0 \; \forall k \; \in \mathbb{Z}^d$</div>
+                </div>
+              </div>
+            <p>
+                The full thesis, including
+                the poster, presentation and the clasical result can be accessed here [<a href="../joshuahey.github.io/Pdfs/MATH_499_Thesis.pdf">Thesis</a>], 
+                [<a href="../joshuahey.github.io/Pdfs/MATH_499_Final_Poster.pdf">Poster</a>], [<a href="../joshuahey.github.io/Pdfs/MATH_499_Final_Presentation.pdf">Presentation</a>],
+                [<a href="../joshuahey.github.io/Pdfs/MATH_499_Classical_Result.pdf">Write-up</a>].
+
+            </p>
+    </div>
+
+    <div class="header">
+        <h4>Summer '22</h4>
+        <p>
+            Haven taken the <i>Honors Ordinary Differential Equations</i> (ODEs) course in the Winter '22 semester, taught by 
+            Prof. <a href = "https://sites.ualberta.ca/~niksirat/">Mohammad Ali Niksirat</a>,
+            we were given the opportunity to work on a final project 
+            <!-- <label for="sn-pl" class="sidenote-toggle">⊕</label><input type="checkbox"
+            id="sn-pl" class="sidenote-toggle" />
+            <span class="sidenote right">
+                $\ddot{x} =f\left(t,\; x(t),\; \dot{x} (t)\right)$ with periodic boundary conditions; $x(0)=x(\lambda),$ $\dot{x}(0)=\dot{x}(\lambda)$
+                where $f$ is an arbitrary function, and $\lambda \in \mathbb{R}$.</span> -->
+                . I decided to work on proving the existence of <a href="#" onclick="event.preventDefault();"> Periodic
+                    Solutions for Second - Order Non - Autonomous Differential Equations.</a> 
+            </p>
+            <p></p>
+            <div class="con">
+                <div class="ii">
+                  <img src="../joshuahey.github.io/15.PNG" alt="Image" class="smaller-image">
+                  <div class="caption">$\ddot{x} =f\left(t,\; x(t),\; \dot{x} (t)\right)$ with periodic boundary conditions; $x(0)=x(\lambda),$ $\dot{x}(0)=\dot{x}(\lambda)$
+                    where $f$ is an arbitrary function, and $\lambda \in \mathbb{R}$</div>
+                </div>
+              </div>
+            <p>
+            
+            Following this semester, I decided to work under Prof.
+            Niksirat on the same project over the summer. We approached it using <a href = "https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping">Degree Theory</a>. 
+            I went through the first two chapters of Louis Nirenberg’s<sup><a href="#fn4" id="ref4">4</a></sup> <i>Topics in Non-Linear Functional Analysis</i>.
+            I reproved some of the theorems in the text for example the 
+            <!-- <a href = "https://en.wikipedia.org/wiki/Brouwer_fixed-point_theorem">Brouwer's Fixed Point Theorem</a><label for="sss" class="sidenote-toggle">⊕</label><input type="checkbox"
+            id="sss" class="sidenote-toggle" />
+            <span class="sidenote left"><img src = "../joshuahey.github.io/16.PNG" style="width: 1000px; height: auto;"></span>, -->
+             which were the
+building blocks leading up to the main theorem which involved proving the existence of the solution.
+        </p>
+        <p>
+            The report, poster and proposal can be accesed here 
+                 [<a href="../joshuahey.github.io/Pdfs/Summer_Research.pdf">Report</a>], 
+                [<a href="../joshuahey.github.io/Pdfs/Joshua Poster final (1).pdf">Poster</a>],
+                 [<a href="../joshuahey.github.io/Pdfs/Joshua-2.pdf">Proposal</a>].
+                
+        </p>
+      </div>
+
+        <h4>Summer '21</h4>
+        <p>
+            During the summer of 2020, after high school graduation, I discovered Professor Petra Bonfert-Taylor's
+             course on Introduction to Complex Analysis at Wesleyan University on Coursera.
+             This sparked my interest in Complex Analysis.  In the following summer, I reached out to Prof. <a href="https://sites.ualberta.ca/~patnaik/">Manish Patnaik</a>
+             regarding research in the field of Analytic Number Theory,
+             <!-- <label for="ss" class="sidenote-toggle">⊕</label><input type="checkbox"
+             id="ss" class="sidenote-toggle" />
+             <span class="sidenote right"><img src = "../joshuahey.github.io/17.PNG" style="width: 1000px; height: auto;"></span> -->
+              which involved studying the 
+              <a href="#" onclick="event.preventDefault();">Moments of
+                Quadratic Dirichlet L - Functions.</a>
+              <!-- <span class= "highlight">Moments of
+            Quadratic Dirichlet L - Functions</span>.  -->
+            
+        </p>
+        <p></p>
+        <div class="con">
+            <div class="ii">
+              <img src="../joshuahey.github.io/17.PNG" alt="Image" class="smaller-imag      ">
+              <div class="caption"></div><div class="caption"></div>
+            </div>
+          </div>
+        <p>
+            I went through the first five
+chapters of Michael Rosen’s<sup><a href="#fn5" id="ref5">5</a></sup>  <i>Number Theory in Function Fields</i> to get a decent understanding and the suitable
+background required to undertake the project. The penultimate proof involved in proving the functional
+equation for the Dirichlet L-series was so arduous that the idea of congregating around the problem took up
+most of my time. As this was my first research
+experience, it helped me in becoming more mathematically mature
+and also gave me a good insight on how research is usually done while gaining a lot of knowledge.
+        </p>
+            <p>
+
+
+           
+            The report and proposal can be accesed here 
+                 [<a href="../joshuahey.github.io/Pdfs/Summer_1.pdf">Report</a>], 
+                 [<a href="../joshuahey.github.io/Pdfs/SummerProject.pdf">Proposal</a>].
+                
+        </p>
+   
+
+
+        
+
+    </article>
+</main>
+
+<script>
+    
+    function setDarkModePreference(enabled) {
+        localStorage.setItem('darkMode', enabled);
+    }
+
+    function getDarkModePreference() {
+        return localStorage.getItem('darkMode') === 'true';
+    }
+</script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [["$", "$"]]
+        }
+    }
+    function setDarkModePreference(isDarkMode) {
+    // Store the dark mode preference in local storage
+    localStorage.setItem('darkModePreference', isDarkMode);
+}
+
+function getDarkModePreference() {
+    // Retrieve the dark mode preference from local storage
+    return localStorage.getItem('darkModePreference') === 'true';
+}
+
+function setDefaultDarkMode() {
+    const body = document.body;
+    const isDarkMode = body.classList.add('dark-mode');
+    setDarkModePreference(isDarkMode);
+}
+
+function toggleDarkMode() {
+    const body = document.body;
+    const isDarkMode = body.classList.toggle('dark-mode');
+    setDarkModePreference(isDarkMode);
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+    const isDarkMode = getDarkModePreference();
+    const body = document.body;
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+    } else {
+        setDefaultDarkMode();
+    }
+});
+</script>
+
+<div class="toggle-button" onclick="toggleDarkMode()">
+    <img src="../joshuahey.github.io/3.PNG" alt="Toggle Dark Mode">
+</div>
+
+</body>
+</html>
+
+<br>
+<br>
+<hr>
+    <div class="footnotes">
+    
+        <p id ="fn1">
+            [1] Kim, Yongho, and Jan Heiland. 
+            <a href="https://arxiv.org/pdf/2302.01278.pdf">"Convolutional Autoencoders, Clustering, and POD for Low-dimensional Parametrization of Navier-Stokes Equations"</a>.
+            Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg, Germany, and Department of Mathematics,
+             Otto von Guericke University Magdeburg, Magdeburg, Germany. 2023.
+            <a href="#ref1" >↩</a>
+        </p>
+        <p id="fn2">
+            [2] Launay, Agnès Desolneux, Bruno Galerne.
+
+          <a
+            href="https://hal.science/hal-02611259/file/DPP_for_image_processing.pdf">"Determinantal Point Processes for Image Processing"</a>.
+          SIAM Journal on Imaging Sciences, 2020, 14 (1), pp.304-348. ff10.1137/20M1327306ff. ffhal-02611259v2
+          <a href="#ref2" >↩</a>
+
+        </p>
+        <p id = "fn3">
+            [3]Grafakos, Loukas. <a href = "https://www.math.stonybrook.edu/~bishop/classes/math638.F20/Grafakos_Classical_Fourier_Analysis.pdf">
+                Classical and Modern Fourier Analysis</a>. 3rd ed., Springer, 2014.
+            <a href="#ref3" >↩</a>
+        </p>
+        <p id = "fn4">
+            [4] Nirenberg, Louis. 
+            <a href = "https://bookstore.ams.org/cln-6">"Topics in Nonlinear Functional Analysis"</a>. 
+            New York University - Courant Institute of Mathematical Sciences, New York, NY.
+            <a href="#ref4" >↩</a>
+        </p>
+        <p id ="fn5">
+            [5] Michael, Rosen.
+            <a href = "https://link.springer.com/book/10.1007/978-1-4757-6046-0">"Number Theory in
+                Function Fields"</a>. Springer. 2002.
+                <a href="#ref5" >↩</a>
+        </p>
