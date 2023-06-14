@@ -267,6 +267,17 @@
 }
 
 
+.custom-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.custom-list li:before {
+  
+  
+  font-size: 16px; /* Customize the size */
+  margin-right: 5px; /* Customize the spacing between the bullet and text */
+}
 
 
 
@@ -328,400 +339,26 @@
     </main>
     <nav role="navigation" class="toc">
         <a id="section1"></a>
-        <h2>Contents</h2>
-        <ol>
-          <li><a href="#Research Projects">Research Projects</a></li>
+        <div style="text-align: center;"><h3>Contents</h3></div>
+        
+            <br>
+          <!-- <li><a href="#Research Projects">Research Projects</a></li>
           <li><a href="#Other Projects">Other Projects</a></li>
           <li><a href="#Conferences">Conferences</a></li>
           <li><a href="#Organisations">Organisations</a></li>
-          <li><a href="#Coursework">Coursework</a></li>
+          <li><a href="#Coursework">Coursework</a></li> -->
+          <div style="text-align: center;">
+          <!-- <span class="highlight"> -->
+          
+          <a href="rp.html">Research Projects</a> / 
+          <a href="op.html">Other Projects</a> / 
+          <a href="conf.html">Conferences</a> / 
+          <a href="org.html">Organisations</a> / 
+          <a href="course.html">Coursework</a>
+          </div>
       </nav>
 
-      
-    <main>
-        <article>
-            <!-- <div class="container">
-                <div class="image-container">
-                  <img src="../12.png" alt="Image 1">
-                  <img src="../13.png" alt="Image 2">
-                </div>
-              </div> -->
-              
-              
-            <h2 id="Research Projects">Research Projects [<a href="#section1">&#8593;</a>]</h2>
-            
-            <div class="projectmpi">
-                    <div class="image">
-                        <img src="../4.PNG">
-                        <img src="../6.PNG">
-                        <img src="../5.PNG">
-                    </div>
-                    <div class="text1">
-                        <div class="title">
-                            
-                            <h3>Summer '23</h3>
-                        </div>
-                        
-                        <p>My current research at the MPI - Magdeburg consists of extracting feature weights 
-                            and maps from various models 
-                            <!-- <label for="sn-symbol"
-                            class="sidenote-toggle">⊕</label><input type="checkbox" id="sn-symbol" class="sidenote-toggle" /><span
-                            class="sidenote right"><img src = "../13.png" style="width: 1000px; height: auto;"></span> -->
-                             such as Convolutional Neural Networks, Convolutional Autoencoders (CAEs)
-                             and Individual CAEs (iCAEs)<sup><a href="#fn1" id="ref1">1</a></sup> for the Discretized Incompressible Navier - Stokes Equations within a single and double cylinder and analyzing them.</p>
-                    </div>
-            </div>
-            <div class="projectnserc">
-                    <div class="text2">
-                        <p>For my research at the University of Alberta, 
-                            <!-- <label for="sn-plu" class="sidenote-toggle">⊕</label><input type="checkbox"
-                            id="sn-plu" class="sidenote-toggle" />
-                            <span class="sidenote left"><img src = "../12.png" style="width: 1000px; height: auto;">
-                            </span> -->
-                             Prof. Yaozhong Hu and I have been been thoroughly studying and analysing 
-                            Clair et al.'s work<sup><a href="#fn2" id="ref2">2</a></sup> <i>Determinantal Point Processes</i> (DPP) 
-                            <!-- <label for="sn-p" class="sidenote-toggle">⊕</label><input type="checkbox"
-                                id="sn-p" class="sidenote-toggle" />
-                                <span class="sidenote left">A random set $X \subset \mathcal{Y}$ is a DPP if
-                                    $\mathbb{P}(A \subset X)=\operatorname{det}\left(K_A\right), \; \forall A \subset \mathcal{Y} = \{1, 2 \ldots N\}$ where $K_A$
-                                is a similarity matrix.                               </span> -->
-                                <i>for Image Processing.</i>
-                            We aim to gain a better understanding of the paper and extract valuable insights from its content and findings.  
-                    </div>
-                    <div class="image">
-                        <div class="grid">
-                            <img src="../7.PNG">
-                            <img src="../8.PNG">
-                            <img src="../9.PNG">
-                            <img src="../10.PNG">
-                            
-                        </div>
-                    </div>
-            </div>
-        <div>
-         <h4>Winter '23</h4>
-         
-          
-                <p>
-                    During the Winter Semester of my third year, I did my undergraduate thesis under Prof. Bin Han. 
-                    The title of my thesis was <a href="#" onclick="event.preventDefault();">Linear Independence and Stability of Functions</a>.
-                    <!-- <label for="sn-s" class="sidenote-toggle">⊕</label><input type="checkbox"
-                    id="sn-s" class="sidenote-toggle" />
-                    <span class="sidenote right">For $v=\left\{v_k\right\}_{k \in \mathbb{Z}^d} \in \ell\left(\mathbb{Z}^d\right), \; f \in \mathscr{E}^{\prime}\left(\mathbb{R}^d\right)$, 
-                        we say $\{f(\cdot-k)\}_{k \in \mathbb{Z}^d}$ is linearly independent if $\sum_{k \in \mathbb{Z}^d} v_k f(\cdot-$ $k)=0 \Longrightarrow v_k=0 \; \forall k \; \in \mathbb{Z}^d$. 
-                        
-                    </span> -->
-                     I started off by studying 
-                    preliminary material like Distribution Theory and Functional Analysis by going through Loukas Grafakos<sup><a href="#fn3" id="ref3">3</a></sup> <i>Classical Fourier Analysis</i>. Then, we 
-                    proved some results like Linear independence of compactly supported distributions and relating the Kernel of
-                    the space of semi-discrete convolutions of a distribution to the Fourier transform of the distribution. 
-
-                </p>
-
-                <p>
-                    My thesis writing 
-                    <!-- <label for="sn-plus" class="sidenote-toggle">⊕</label><input type="checkbox"
-                    id="sn-plus" class="sidenote-toggle" />
-                    <span class="sidenote left"><img src = "../14.PNG" style="width: 1000px; height: auto;"></span> -->
-                     has been enlightening, providing me with valuable knowledge and skills. 
-                    Despite the significant time commitment, I efficiently developed my paper writing skills through guidance and feedback from my supervisor.
-                </p>
-                <p>
-                    We also had to do a write-up on a famous classical result in our field so I chose to do it on the
-                     <a href="https://en.wikipedia.org/wiki/Poisson_summation_formula">Poisson Summation Formula</a>. 
-                     This improved my ability to efficiently summarize complex concepts and communicate them effectively to others.
-                </p>
-                <p></p>
-                <p></p>
-                <div class="con">
-                    <div class="ii">
-                      <img src="../14.PNG" alt="Image" class="smaller-image">
-                      <div class="caption">For $v=\left\{v_k\right\}_{k \in \mathbb{Z}^d} \in \ell\left(\mathbb{Z}^d\right), \; f \in \mathscr{E}^{\prime}\left(\mathbb{R}^d\right)$, we say $\{f(\cdot-k)\}_{k \in \mathbb{Z}^d}$ 
-                        is linearly independent if $\sum_{k \in \mathbb{Z}^d} v_k f(\cdot-$ $k)=0 \Longrightarrow v_k=0 \; \forall k \; \in \mathbb{Z}^d$</div>
-                    </div>
-                  </div>
-                <p>
-                    The full thesis, including
-                    the poster, presentation and the clasical result can be accessed here [<a href="../Pdfs/MATH_499_Thesis.pdf">Thesis</a>], 
-                    [<a href="../Pdfs/MATH_499_Final_Poster.pdf">Poster</a>], [<a href="../Pdfs/MATH_499_Final_Presentation.pdf">Presentation</a>],
-                    [<a href="../Pdfs/MATH_499_Classical_Result.pdf">Write-up</a>].
-    
-                </p>
-        </div>
-
-        <div class="header">
-            <h4>Summer '22</h4>
-            <p>
-                Haven taken the <i>Honors Ordinary Differential Equations</i> (ODEs) course in the Winter '22 semester, taught by 
-                Prof. <a href = "https://sites.ualberta.ca/~niksirat/">Mohammad Ali Niksirat</a>,
-                we were given the opportunity to work on a final project 
-                <!-- <label for="sn-pl" class="sidenote-toggle">⊕</label><input type="checkbox"
-                id="sn-pl" class="sidenote-toggle" />
-                <span class="sidenote right">
-                    $\ddot{x} =f\left(t,\; x(t),\; \dot{x} (t)\right)$ with periodic boundary conditions; $x(0)=x(\lambda),$ $\dot{x}(0)=\dot{x}(\lambda)$
-                    where $f$ is an arbitrary function, and $\lambda \in \mathbb{R}$.</span> -->
-                    . I decided to work on proving the existence of <a href="#" onclick="event.preventDefault();"> Periodic
-                        Solutions for Second - Order Non - Autonomous Differential Equations.</a> 
-                </p>
-                <p></p>
-                <div class="con">
-                    <div class="ii">
-                      <img src="../15.PNG" alt="Image" class="smaller-image">
-                      <div class="caption">$\ddot{x} =f\left(t,\; x(t),\; \dot{x} (t)\right)$ with periodic boundary conditions; $x(0)=x(\lambda),$ $\dot{x}(0)=\dot{x}(\lambda)$
-                        where $f$ is an arbitrary function, and $\lambda \in \mathbb{R}$</div>
-                    </div>
-                  </div>
-                <p>
-                
-                Following this semester, I decided to work under Prof.
-                Niksirat on the same project over the summer. We approached it using <a href = "https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping">Degree Theory</a>. 
-                I went through the first two chapters of Louis Nirenberg’s<sup><a href="#fn4" id="ref4">4</a></sup> <i>Topics in Non-Linear Functional Analysis</i>.
-                I reproved some of the theorems in the text for example the 
-                <!-- <a href = "https://en.wikipedia.org/wiki/Brouwer_fixed-point_theorem">Brouwer's Fixed Point Theorem</a><label for="sss" class="sidenote-toggle">⊕</label><input type="checkbox"
-                id="sss" class="sidenote-toggle" />
-                <span class="sidenote left"><img src = "../16.PNG" style="width: 1000px; height: auto;"></span>, -->
-                 which were the
-building blocks leading up to the main theorem which involved proving the existence of the solution.
-            </p>
-            <p>
-                The report, poster and proposal can be accesed here 
-                     [<a href="../Pdfs/Summer_Research.pdf">Report</a>], 
-                    [<a href="../Pdfs/Joshua Poster final (1).pdf">Poster</a>],
-                     [<a href="../Pdfs/Joshua-2.pdf">Proposal</a>].
-                    
-            </p>
-          </div>
-
-            <h4>Summer '21</h4>
-            <p>
-                During the summer of 2020, after high school graduation, I discovered Professor Petra Bonfert-Taylor's
-                 course on Introduction to Complex Analysis at Wesleyan University on Coursera.
-                 This sparked my interest in Complex Analysis.  In the following summer, I reached out to Prof. <a href="https://sites.ualberta.ca/~patnaik/">Manish Patnaik</a>
-                 regarding research in the field of Analytic Number Theory,
-                 <!-- <label for="ss" class="sidenote-toggle">⊕</label><input type="checkbox"
-                 id="ss" class="sidenote-toggle" />
-                 <span class="sidenote right"><img src = "../17.PNG" style="width: 1000px; height: auto;"></span> -->
-                  which involved studying the 
-                  <a href="#" onclick="event.preventDefault();">Moments of
-                    Quadratic Dirichlet L - Functions.</a>
-                  <!-- <span class= "highlight">Moments of
-                Quadratic Dirichlet L - Functions</span>.  -->
-                
-            </p>
-            <p></p>
-            <div class="con">
-                <div class="ii">
-                  <img src="../17.PNG" alt="Image" class="smaller-imag      ">
-                  <div class="caption"></div><div class="caption"></div>
-                </div>
-              </div>
-            <p>
-                I went through the first five
-chapters of Michael Rosen’s<sup><a href="#fn5" id="ref5">5</a></sup>  <i>Number Theory in Function Fields</i> to get a decent understanding and the suitable
-background required to undertake the project. The penultimate proof involved in proving the functional
-equation for the Dirichlet L-series was so arduous that the idea of congregating around the problem took up
-most of my time. As this was my first research
-experience, it helped me in becoming more mathematically mature
-and also gave me a good insight on how research is usually done while gaining a lot of knowledge.
-            </p>
-                <p>
-
-
-               
-                The report and proposal can be accesed here 
-                     [<a href="../Pdfs/Summer_1.pdf">Report</a>], 
-                     [<a href="../Pdfs/SummerProject.pdf">Proposal</a>].
-                    
-            </p>
-       
-
-
-            
-
-        </article>
-    </main>
-
-
-      <main>
-        <article>
-          <h2 id="Other Projects">Other Projects [<a href="#section1">&#8593;</a>]</h2>
-          Over the past two years, I have been fortunate to conduct research under various professors in the math
-department at the University of Alberta. This experience has not only provided me with valuable research
-experience and critical thinking skills in mathematics but has also solidified my research skills.
-On the side I did some projects on my own as well as course project which I have mentioned here.
-            
-            <p>
-            </p>    
-                <div class="con">
-                    <div class="ii">
-                      <img src="../20.PNG" alt="Image" class="smaller-image">
-                      <div class="caption">$r_{\text {loss }}=\|\Delta u+f(x, y)\|_{L_2}^2+\|u(x, 0)-\sin (\pi x)\|_{L_2}^2$</div><div class="caption"></div>
-                    </div>
-                </div>
-                <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Joshua Joseph George, "Using Neural Networks to Solve Partial Differential Equations". <i> Machine Learning</i>. 
-                University of Alberta. 2023. [<a href="../Pdfs/CMPUT_466_Final_Project.pdf">Paper</a>], 
-                [<a href="../Pdfs/CMPUT_466_Project_Proposal.pdf">Proposal</a>],
-                 [<a href="https://github.com/joshuahey/CMPUT-466-Final-Project/tree/main/Code">Code</a>].
-                <small>Keywords: Physics Informed Neural Networks (PINNs), Finite Difference Method, Partial Differential Equations. </small></p>
-                 
-            <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Robert Joseph George, Joshua Joseph George, Davidson Noby. ”Water and Hydroelectric Power Sharing”. <i>The
-    Mathematical Contest in Modeling</i>. COMAP’s Mathematical Contest in Modeling (MCM). 2022. 
-    [<a href="../Pdfs/MCM2022.pdf">Paper</a>]. 
-    <small>Keywords: Linear Programming, Network Flow, Water Allocation. </small>
-            </p> 
-            <div class="con">
-                <div class="ii">
-                  <img src="../21.PNG" alt="Image" class="smaller-image">
-                  <div class="caption">Maximum Flow of our Model from Analysis</div><div class="caption"></div>
-                </div>
-            </div>
-            <!-- <div class="con">
-                <div class="ii">
-                  <img src="../19.PNG" alt="Image" class="smaller-image">
-                  <div class="caption">$r_{\text {loss }}=\|\Delta u+f(x, y)\|_{L_2}^2+\|u(x, 0)-\sin (\pi x)\|_{L_2}^2$</div><div class="caption"></div>
-                </div>
-            </div> -->
-
-            <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Joshua Joseph George, Oluwatimilehin Ajayi, Gurmol Sohi .“Fear of COVID-19 Vaccine Hesitancy using Sentiment
-Analysis and World Population Data”. <i>Stem Fellowship Journal</i>. 2022. 
-[<a href="../Pdfs/UNBDC_2021_TEAM_88.pdf">Paper</a>].
-<small>Keywords: COVID-19, Sentiment Analysis, Misinformation. </small>
-
-
-            </p>
-            <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Audio Classifier: Built a deep audio classifier on the TESS emotional dataset using Convolutional Neural
-Networks. 2022. [<a href="https://github.com/joshuahey/DL-projects/blob/main/emotioncnn.ipynb ">Code</a>].
-            </p>
-            <div class="con">
-                <div class="ii">
-                  <img src="../22.PNG" alt="Image" class="smaller-image">
-                  <div class="caption">Spectrogram Images for different Emotions</div><div class="caption"></div>
-                </div>
-            </div>
-            <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Brain Tumor detection: Built a brain tumor detector using Convolutional Neural Networks, Short-time Fourier transform. 2022.
-                [<a href="https://github.com/joshuahey/DL-projects/blob/main/braintumor.ipynb ">Code</a>].
-            </p>
-            
-            <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Lawrence Martinez, Joshua Joseph George, Aram
-                Alyousef. "Dynamics and Public Health Measures of Tuberculosis in South Africa". <i>Mathematical Modelling in Life Sciences.</i>
-                University of Alberta. 2022. [<a href="../Pdfs/371_Final_Project.pdf">Paper</a>]. 
-                <small>Keywords: SIR model, Phase Plane Analysis. </small>
-            </p>
-            <div class="con">
-                <div class="ii">
-                  <img src="../23.png" alt="Image" class="smaller-image">
-                  <div class="caption">Modular Form<sup><a href="#fn6" id="ref6">6</a></sup> </div><div class="caption"></div>
-                </div>
-            </div>
-            <p>
-                <a href="#" onclick="event.preventDefault();">$\gamma$</a> Joshua Joseph George. "Modular Groups". <i>Group Theory I.</i>
-                University of Alberta. 2022. [<a href="../Pdfs/328_Final_Project.pdf">Paper</a>].
-                <small>Keywords: Modular Forms, Fundamental Domain, Special linear groups, Eisenstein Series. </small>
-            </p>
-        </article>
-    </main>
-
-   
-    <main>
-        <article>
-          <h2 id="Conferences">Conferences [<a href="#section1">&#8593;</a>]</h2>
-          Attending conferences was enriching as I had the opportunity to hear professors from 
-          different universities discuss their research and engage with them to learn about their research experiences.
-          <div class="cons">
-            <div class="iis">
-              <img src="../25.jpg" alt="Image" class="smaller-imag">
-              <div class="caption">MPI Mis Conference<sup><a href="https://www.mis.mpg.de/calendar/conferences/2023/shocks.html">7</a></sup> </div><div class="caption"></div>
-            </div>
-        </div>
-        <p><a href="#" onclick="event.preventDefault();">$\gamma$</a> <i>Shocking Developments: New Directions in Compressible and Incompressible Flows</i>: A Conference in Honor of Alexis Vasseur’s 50th Birthday. 
-            Max Planck Institute for Mathematics in the Sciences, June 2023.
-        </p>
-         <p><a href="#" onclick="event.preventDefault();">$\gamma$</a> <i>Undergraduate Research Symposium</i>, University of Alberta, August 2022.</p>
-         <div class="con">
-            <div class="ii">
-              <img src="../27.jpg" alt="Image" class="smaller-image">
-              <div class="caption">Undergraduate Symposium and Number Theory days<sup><a href="https://www.birs.ca/events/2021/2-day-workshops/21w2505#:~:text=The%20Banff%20International%20Research%20Station,areas%20of%20mathematics%20and%20science">8</a></sup> </div><div class="caption"></div>
-            </div>
-        </div>
-         <p><a href="#" onclick="event.preventDefault();">$\gamma$</a> <i>Alberta Number Theory Days</i>, Banff International Research Station, November 2021.</p>
-          <p><a href="#" onclick="event.preventDefault();">$\gamma$</a> 
-  Mathematical Assosication of America Virtual <i>MATHFEST</i>, August 2021. </p>
-  <p><a href="#" onclick="event.preventDefault();">$\gamma$</a> 
-<i>The International Undergraduate Summer Enrichment Program</i>, July – August 2021
-Department of Mathematics and Statistics, University of Alberta. </p>
-
-        </article>
-    </main>
-    
-    <main>
-        <article>
-
-          <h2 id="Organisations">Organisations [<a href="#section1">&#8593;</a>]</h2>
-        </article>
-    </main>
-
-
-
-
-    <main>
-        <article>
-        <h2 id="Coursework">Coursework [<a href="#section1">&#8593;</a>]</h2>
-
-        </article>
-    </main>
-    <hr>
-    <div class="footnotes">
-    
-        <p id ="fn1">
-            [1] Kim, Yongho, and Jan Heiland. 
-            <a href="https://arxiv.org/pdf/2302.01278.pdf">"Convolutional Autoencoders, Clustering, and POD for Low-dimensional Parametrization of Navier-Stokes Equations"</a>.
-            Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg, Germany, and Department of Mathematics,
-             Otto von Guericke University Magdeburg, Magdeburg, Germany. 2023.
-            <a href="#ref1" >↩</a>
-        </p>
-        <p id="fn2">
-            [2] Launay, Agnès Desolneux, Bruno Galerne.
-
-          <a
-            href="https://hal.science/hal-02611259/file/DPP_for_image_processing.pdf">"Determinantal Point Processes for Image Processing"</a>.
-          SIAM Journal on Imaging Sciences, 2020, 14 (1), pp.304-348. ff10.1137/20M1327306ff. ffhal-02611259v2
-          <a href="#ref2" >↩</a>
-
-        </p>
-        <p id = "fn3">
-            [3]Grafakos, Loukas. <a href = "https://www.math.stonybrook.edu/~bishop/classes/math638.F20/Grafakos_Classical_Fourier_Analysis.pdf">
-                Classical and Modern Fourier Analysis</a>. 3rd ed., Springer, 2014.
-            <a href="#ref3" >↩</a>
-        </p>
-        <p id = "fn4">
-            [4] Nirenberg, Louis. 
-            <a href = "https://bookstore.ams.org/cln-6">"Topics in Nonlinear Functional Analysis"</a>. 
-            New York University - Courant Institute of Mathematical Sciences, New York, NY.
-            <a href="#ref4" >↩</a>
-        </p>
-        <p id ="fn5">
-            [5] Michael, Rosen.
-            <a href = "https://link.springer.com/book/10.1007/978-1-4757-6046-0">"Number Theory in
-                Function Fields"</a>. Springer. 2002.
-                <a href="#ref5" >↩</a>
-        </p>
-        <p id = "fn6">
-            [6] Lowry Duda, David
-        <a href="https://math.stackexchange.com/questions/4302146/plotting-graphs-of-modular-forms">Plotting graphs of Modular Forms</a> 
-        Math Stack Exchange.
-            <a href="#ref6" >↩</a>
-        </p>
-    </div>
-
-
-
-
+ 
     <script>
     
         function setDarkModePreference(enabled) {
