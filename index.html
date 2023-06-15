@@ -283,14 +283,35 @@
 
     </style>
 
-  <meta property="og:title" content="Joshua">
+<meta property="og:title" content="Joshua">
   <meta property="og:description" content="Honors Math @Ualberta">
   <meta property="og:image" content="https://img.freepik.com/premium-vector/purple-butterfly-illustration_773626-22.jpg">
-
-
 </head>
 
 <body>
+    <nav role="navigation" class="toc">
+        <a id="section1"></a>
+        <!-- <div style="text-align: center;"><h3>Contents</h3></div> -->
+        
+            <!-- <br> -->
+          <!-- <li><a href="#Research Projects">Research Projects</a></li>
+          <li><a href="#Other Projects">Other Projects</a></li>
+          <li><a href="#Conferences">Conferences</a></li>
+          <li><a href="#Organisations">Organisations</a></li>
+          <li><a href="#Coursework">Coursework</a></li> -->
+          <div style="text-align: center;">
+          <!-- <span class="highlight"> -->
+          
+          <a href="rp.html">Research Projects</a> / 
+          <a href="op.html">Other Projects</a> / 
+          <a href="conf.html">Conferences</a> / 
+          <a href="org.html">Organisations</a> / 
+          <a href="course.html">Coursework</a>
+          </div>
+      </nav>
+      <br>
+      <br>
+
     <header>
         <div class="header-image">
             <img src="../1.png" alt="Image">
@@ -337,35 +358,31 @@
             
         </article>
     </main>
-    <nav role="navigation" class="toc">
+    <!-- <nav role="navigation" class="toc">
         <a id="section1"></a>
         <div style="text-align: center;"><h3>Contents</h3></div>
         
             <br>
-          <!-- <li><a href="#Research Projects">Research Projects</a></li>
+         
+             <li><a href="#Research Projects">Research Projects</a></li>
           <li><a href="#Other Projects">Other Projects</a></li>
           <li><a href="#Conferences">Conferences</a></li>
           <li><a href="#Organisations">Organisations</a></li>
           <li><a href="#Coursework">Coursework</a></li> -->
-          <div style="text-align: center;">
-          <!-- <span class="highlight"> -->
+          <!-- <div style="text-align: center;">
           
-          <a href="rp.html">Research Projects</a> / 
+            <span class="highlight"> -->
+          
+          <!-- <a href="rp.html">Research Projects</a> / 
           <a href="op.html">Other Projects</a> / 
           <a href="conf.html">Conferences</a> / 
           <a href="org.html">Organisations</a> / 
           <a href="course.html">Coursework</a>
-          </div>
-      </nav>
+          </div> -->
+      <!-- </nav> -->
 
-<br>
-    <br>
-    
-                  <div style="text-align: center;"> <img src="../28.png" alt="Image"></div>
-                  
-              
+ 
     <script>
-        
     
         function setDarkModePreference(enabled) {
             localStorage.setItem('darkMode', enabled);
@@ -375,15 +392,15 @@
             return localStorage.getItem('darkMode') === 'true';
         }
     </script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        MathJax = {
-            tex: {
-                inlineMath: [["$", "$"]]
-            }
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [["$", "$"]]
         }
-        function setDarkModePreference(isDarkMode) {
+    }
+    function setDarkModePreference(isDarkMode) {
         // Store the dark mode preference in local storage
         localStorage.setItem('darkModePreference', isDarkMode);
     }
@@ -395,8 +412,8 @@
 
     // function setDefaultDarkMode() {
     //     const body = document.body;
-    //     const isDarkMode = body.classList.add('dark-mode');
-    //     setDarkModePreference(isDarkMode);
+    //     body.classList.add('dark-mode');
+    //     setDarkModePreference(false);
     // }
 
     function toggleDarkMode() {
@@ -414,7 +431,12 @@
             setDefaultDarkMode();
         }
     });
-    </script>
+</script>
+<br>
+<br>
+<br>
+
+<div style="text-align: center;"> <img src="../28.png" alt="Image"></div>
 
     <div class="toggle-button" onclick="toggleDarkMode()">
         <img src="../3.PNG" alt="Toggle Dark Mode">
