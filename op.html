@@ -285,10 +285,9 @@
     
         </style>
     
-      <meta property="og:title" content="Joshua">
+    <meta property="og:title" content="Joshua">
     <meta property="og:description" content="Honors Math @Ualberta">
     <meta property="og:image" content="https://img.freepik.com/premium-vector/purple-butterfly-illustration_773626-22.jpg">
-    
     
     </head>
 </head>
@@ -306,10 +305,10 @@
     <article>
       <!-- <h2 id="Other Projects">Other Projects [<a href="#section1">&#8593;</a>]</h2> -->
       <h2>Other Projects</h2>
-      Over the past two years, I have been fortunate to conduct research under various professors in the math
+      <p>Over the past two years, I have been fortunate to conduct research under various professors in the math
 department at the University of Alberta. This experience has not only provided me with valuable research
 experience and critical thinking skills in mathematics but has also solidified my research skills.
-On the side I did some projects on my own as well as course project which I have mentioned here.
+On the side I did some projects on my own as well as course project which I have mentioned here.</p>
         
         <p>
         </p>    
@@ -390,6 +389,9 @@ Networks. 2022. [<a href="https://github.com/joshuahey/DL-projects/blob/main/emo
 
 <br>
 <br>
+
+<div style="text-align: center;"> <img src="../34.png" alt="Image"></div>
+<br>
 <hr>
 <div class="footnotes">
 <p id = "fn6">
@@ -411,6 +413,7 @@ Math Stack Exchange.
 </script>
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <script>
     MathJax = {
         tex: {
@@ -418,36 +421,36 @@ Math Stack Exchange.
         }
     }
     function setDarkModePreference(isDarkMode) {
-    // Store the dark mode preference in local storage
-    localStorage.setItem('darkModePreference', isDarkMode);
-}
-
-function getDarkModePreference() {
-    // Retrieve the dark mode preference from local storage
-    return localStorage.getItem('darkModePreference') === 'true';
-}
-
-// function setDefaultDarkMode() {
-//     const body = document.body;
-//     const isDarkMode = body.classList.add('dark-mode');
-//     setDarkModePreference(isDarkMode);
-// }
-
-function toggleDarkMode() {
-    const body = document.body;
-    const isDarkMode = body.classList.toggle('dark-mode');
-    setDarkModePreference(isDarkMode);
-}
-
-window.addEventListener('DOMContentLoaded', function() {
-    const isDarkMode = getDarkModePreference();
-    const body = document.body;
-    if (isDarkMode) {
-        body.classList.add('dark-mode');
-    } else {
-        setDefaultDarkMode();
+        // Store the dark mode preference in local storage
+        localStorage.setItem('darkModePreference', isDarkMode);
     }
-});
+
+    function getDarkModePreference() {
+        // Retrieve the dark mode preference from local storage
+        return localStorage.getItem('darkModePreference') === 'true';
+    }
+
+    // function setDefaultDarkMode() {
+    //     const body = document.body;
+    //     body.classList.add('dark-mode');
+    //     setDarkModePreference(false);
+    // }
+
+    function toggleDarkMode() {
+        const body = document.body;
+        const isDarkMode = body.classList.toggle('dark-mode');
+        setDarkModePreference(isDarkMode);
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = getDarkModePreference();
+        const body = document.body;
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            setDefaultDarkMode();
+        }
+    });
 </script>
 
 <div class="toggle-button" onclick="toggleDarkMode()">
