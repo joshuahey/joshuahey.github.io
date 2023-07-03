@@ -134,8 +134,8 @@ body.libertinus {
 
 body {
 /*   font-family: 'Latin Modern'; */
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.8;
+  font-family: 400 16px/1.85 'Roboto', sans-serif;
+  line-height: 1.8; 
   
     max-width: 80ch;
     min-height: 100vh;
