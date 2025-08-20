@@ -632,7 +632,19 @@ and also gave me a good insight into how research is usually done.
 
     </article>
 </main>
+<script>
+    
+    function setDarkModePreference(enabled) {
+        localStorage.setItem('darkMode', enabled);
+    }
+
+    function getDarkModePreference() {
+        return localStorage.getItem('darkMode') === 'true';
+    }
+</script>
+
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <script>
     MathJax = {
         tex: {
@@ -640,37 +652,41 @@ and also gave me a good insight into how research is usually done.
         }
     }
     function setDarkModePreference(isDarkMode) {
-    // Store the dark mode preference in local storage
-    localStorage.setItem('darkModePreference', isDarkMode);
-}
-
-function getDarkModePreference() {
-    // Retrieve the dark mode preference from local storage
-    return localStorage.getItem('darkModePreference') === 'true';
-}
-
-// function setDefaultDarkMode() {
-//     const body = document.body;
-//     const isDarkMode = body.classList.add('dark-mode');
-//     setDarkModePreference(isDarkMode);
-// }
-
-function toggleDarkMode() {
-    const body = document.body;
-    const isDarkMode = body.classList.toggle('dark-mode');
-    setDarkModePreference(isDarkMode);
-}
-
-window.addEventListener('DOMContentLoaded', function() {
-    const isDarkMode = getDarkModePreference();
-    const body = document.body;
-    if (isDarkMode) {
-        body.classList.add('dark-mode');
-    } else {
-        setDefaultDarkMode();
+        // Store the dark mode preference in local storage
+        localStorage.setItem('darkModePreference', isDarkMode);
     }
-});
+
+    function getDarkModePreference() {
+        // Retrieve the dark mode preference from local storage
+        return localStorage.getItem('darkModePreference') === 'true';
+    }
+
+    // function setDefaultDarkMode() {
+    //     const body = document.body;
+    //     body.classList.add('dark-mode');
+    //     setDarkModePreference(false);
+    // }
+
+    function toggleDarkMode() {
+        const body = document.body;
+        const isDarkMode = body.classList.toggle('dark-mode');
+        setDarkModePreference(isDarkMode);
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+        const isDarkMode = getDarkModePreference();
+        const body = document.body;
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        } else {
+            setDefaultDarkMode();
+        }
+    });
 </script>
+
+<div class="toggle-button" onclick="toggleDarkMode()">
+    <img src="../3.PNG" alt="Toggle Dark Mode">
+</div>
 <script >
     
   document.querySelectorAll(".collapsible").forEach(button => {
@@ -686,9 +702,7 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 
 </script>
-<div class="toggle-button" onclick="toggleDarkMode()">
-    <img src="../3.PNG" alt="Toggle Dark Mode">
-</div>
+
 
 </body>
 </html>
@@ -698,6 +712,7 @@ window.addEventListener('DOMContentLoaded', function() {
 <br>
 <div style="text-align: center;"> <img src="../33.png" alt="Image"></div> -->
 <br>  
+
 
 
 
