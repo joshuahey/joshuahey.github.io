@@ -281,7 +281,33 @@
       margin-right: 5px; /* Customize the spacing between the bullet and text */
     }
     
-    
+    .collapsible {
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: #666;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  margin-bottom: 10px;
+}
+
     
         </style>
     
@@ -560,7 +586,21 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+<script >
+    
+  document.querySelectorAll(".collapsible").forEach(button => {
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  });
 
+</script>
 <div class="toggle-button" onclick="toggleDarkMode()">
     <img src="../3.PNG" alt="Toggle Dark Mode">
 </div>
@@ -614,6 +654,7 @@ window.addEventListener('DOMContentLoaded', function() {
             [6] Gaudreau, Philippe, Richard M. Slevinsky, and Hassan Safouhi. <a href = "https://epubs.siam.org/doi/10.1137/100803778" >"Computation 
                 of tail probabilities via extrapolation methods and connection with rational and padé approximants"</a>. SIAM Journal on Scientific Computing 34.1 (2012): B65-B85. <a href="#ref6" >↩</a>
         </p>
+
 
 
 
