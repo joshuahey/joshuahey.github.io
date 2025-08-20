@@ -678,7 +678,21 @@ and also gave me a good insight into how research is usually done.
 <div class="toggle-button" onclick="toggleDarkMode()">
     <img src="../3.PNG" alt="Toggle Dark Mode">
 </div>
-
+<script>
+    <script >
+    
+  document.querySelectorAll(".collapsible").forEach(button => {
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  });
+</script>
 </body>
 </html>
 
@@ -687,6 +701,7 @@ and also gave me a good insight into how research is usually done.
 <br>
 <div style="text-align: center;"> <img src="../33.png" alt="Image"></div> -->
 <br>  
+
 
 
 
